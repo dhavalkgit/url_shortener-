@@ -59,11 +59,11 @@ A robust and secure URL shortening service built with Spring Boot and MongoDB. T
    cd url-shortener
    ```
 
-2. Configure MongoDB:
+2. Configure MongoDB and IPinfo:
    - Install MongoDB if not already installed
    - Create a database named `url_shortener`
    - Update MongoDB connection details in `application.properties` if needed
-
+   - Update your IPinfo access token in `config.CommonConfig` class
 3. Build the project:
    ```bash
    ./gradlew build

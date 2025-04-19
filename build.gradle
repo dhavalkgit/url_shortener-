@@ -38,7 +38,11 @@ dependencies {
 	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
 	implementation 'io.jsonwebtoken:jjwt:0.12.5'
 }
-
+bootJar {
+	enabled=true
+	archiveFileName = 'my-app.jar'
+	mainClass = 'com.example.UrlShortenerApplication' // Replace with your main class
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
